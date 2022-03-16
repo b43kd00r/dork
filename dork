@@ -1,6 +1,7 @@
 Google Dork to finding a bug bounty program
 ============================================================================================================
 
+site:*.*.in intext:responsible disclosure reward
 inurl /bug bounty
 inurl : / security
 inurl:security.txt
