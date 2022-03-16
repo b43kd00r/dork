@@ -1,3 +1,6 @@
+Google Dork to finding a bug bounty program
+============================================================================================================
+
 inurl /bug bounty
 inurl : / security
 inurl:security.txt
@@ -85,3 +88,42 @@ site:*.br responsible disclosure
 site:*.at responsible disclosure
 site:*.be responsible disclosure
 site:*.au responsible disclosure
+
+============================================================================================================
+Google Dorks to find juicy information about target websites
+site:target.com ext:doc | ext:docx | ext:odt | ext:rtf | ext:sxw | ext:psw | ext:ppt | ext:pptx | ext:pps | ext:csv
+site:target.com intitle:index.of
+site:target.com ext:xml | ext:conf | ext:cnf | ext:reg | ext:inf | ext:rdp | ext:cfg | ext:txt | ext:ora | ext:ini | ext:env
+site:target.com ext:sql | ext:dbf | ext:mdb
+site:target.com ext:log
+site:target.com ext:bkf | ext:bkp | ext:bak | ext:old | ext:backup
+site:target.com inurl:login | inurl:signin | intitle:Login | intitle:"sign in" | inurl:auth
+site:target.com intext:"sql syntax near" | intext:"syntax error has occurred" | intext:"incorrect syntax near" | intext:"unexpected end of SQL command" | intext:"Warning: mysql_connect()" | intext:"Warning: mysql_query()" | intext:"Warning: pg_connect()"
+site:target.com inurl:signup | inurl:register | intitle:Signup
+
+============================================================================================================
+Github Dorks:
+password
+dbpassword
+dbuser
+access_key
+secret_access_key
+bucket_password
+redis_password
+root_password
+filename:.npmrc _auth
+filename:.dockercfg auth
+extension:pem private
+extension:ppk private
+filename:id_rsa or filename:id_dsa
+extension:sql mysql dump
+extension:sql mysql dump password
+filename:credentials aws_access_key_id
+filename:.s3cfg
+filename:wp-config.php
+filename:.htpasswd
+filename:.env DB_USERNAME NOT homestead
+filename:.env MAIL_HOST=smtp.gmail.com
+filename:.git-credentials
+
+
